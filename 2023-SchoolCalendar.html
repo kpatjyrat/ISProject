@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Calendar 2023</title>
+    <script>
+        // เมื่อหน้าเว็บโหลดเสร็จสมบูรณ์
+        window.onload = function() {
+            // ระบุ URL ของไฟล์ PDF ใน Google Drive
+            var pdfUrl = "https://drive.google.com/uc?id=1g3upcrE2-YD9Yp8F-jDsyLjSMc1XcDzw";
+
+            // สร้างอินสแตนซ์ของ element <a> สำหรับดาวน์โหลด
+            var downloadLink = document.createElement('a');
+
+            // กำหนด URL สำหรับลิงก์ดาวน์โหลด
+            downloadLink.href = pdfUrl;
+
+            // ตั้งค่าแอตทริบิวต์สำหรับดาวน์โหลดอัตโนมัติ
+            downloadLink.download = "ITSCalendar.pdf"; // ระบุชื่อไฟล์ที่คุณต้องการให้ไฟล์ PDF บันทึกลง
+
+            // คลิกลิงก์ดาวน์โหลดโดยอัตโนมัติ
+            downloadLink.click();
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
